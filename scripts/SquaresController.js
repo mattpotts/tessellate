@@ -104,6 +104,7 @@ function SquaresController() {
    */
   var vm = this;
   vm.squares = squares;
+  vm.setRandomSquares = setRandomSquares;
 
   /*
    * Constructor.
