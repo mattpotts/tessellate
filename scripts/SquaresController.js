@@ -10,42 +10,78 @@ function SquaresController() {
 
   vm.squares = [];
 
-  var colors = [
-    '#f3f3f3',
-    '#4d5e78',
-    '#7fb9df',
-    '#c85a80'
+  var palettes = [
+    [
+      '#f3f3f3',
+      '#4d5e78',
+      '#7fb9df',
+      '#c85a80'
+    ],
+    [
+      '#f3f3f3',
+      '#784d5e',
+      '#b97fdf',
+      '#5ac880'
+    ]
   ];
 
   /**
-   * Add a square of random colors to the squares array.
+   * Get a square of colors randomly selected from the palette.
+   *
+   * @param palette
+   * @returns {*[]}
    */
-  var addSquare = function() {
-    vm.squares.push([
-        randomColor(),
-        randomColor(),
-        randomColor(),
-        randomColor()
-    ]);
+  var getSquare = function(palette) {
+    return [
+        getRandomColor(palette),
+        getRandomColor(palette),
+        getRandomColor(palette),
+        getRandomColor(palette)
+    ];
   };
 
   /**
-   * Pick a random color from the colors array.
+   * Get list of squares.
+   *
+   * @returns {Array}
+   */
+  var getSquares = function () {
+    var palette = getRandomPalette();
+    var squares = [];
+    for(var i=0; i<squareCount; i++) {
+      var square = getSquare(palette);
+      squares.push(square);
+    }
+    return squares;
+  };
+
+  /**
+   * Pick a random color from the palette.
+   *
    * @returns {string}
    */
-  var randomColor = function () {
-    var max = colors.length;
+  var getRandomColor = function (palette) {
+    var max = palette.length;
     var index = Math.floor(Math.random() * max);
-    return colors[index];
+    return palette[index];
+  };
+
+  /**
+   * Pick a random palette from the palettes array.
+   *
+   * @returns {integer}
+   */
+  var getRandomPalette = function() {
+    var max = palettes.length;
+    var index = Math.floor(Math.random() * max);
+    return palettes[index];
   };
 
   /*
    * Constructor
    */
   (function() {
-    for(var i=0; i<squareCount; i++) {
-      addSquare();
-    }
+    vm.squares = getSquares();
   })();
 }
 
