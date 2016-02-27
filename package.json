@@ -1,18 +1,14 @@
 {
   "name": "bonnie-craig",
-  "version": "1.0.0",
-  "description": "This project will use tricks as described [https://css-tricks.com/snippets/css/css-triangle/](here) to generate art using CSS and HTML",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Generate triangle art using CSS and HTML (à la Bonnie Craig)",
   "dependencies": {},
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git@gitlab.tripodsoftware.co.uk:matt.potts/bonnie-craig.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["triangles", "art", "generator", "bonnie craig"],
+  "author": "Matt Potts",
+  "license": "MIT"
 }
