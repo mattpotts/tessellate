@@ -11,7 +11,12 @@ function SquaresController($scope) {
   vm.squares = [];
 
   var addSquare = function() {
-    vm.squares.push({});
+    vm.squares.push([
+        '#f3f3f3',
+        '#4d5e78',
+        '#7fb9df',
+        '#c85a80'
+    ]);
   };
 
   /*

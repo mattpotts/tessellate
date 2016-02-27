@@ -12,10 +12,10 @@
 <div class="sequence-of-squares" ng-controller="SquaresController as vm">
 
   <div class="square-of-triangles" ng-repeat="square in vm.squares">
-    <div class="triangle triangle-top"></div>
-    <div class="triangle triangle-left"></div>
-    <div class="triangle triangle-right"></div>
-    <div class="triangle triangle-bottom"></div>
+    <div class="triangle triangle-top" ng-style="{'border-top-color': square[0]};"></div>
+    <div class="triangle triangle-left" ng-style="{'border-left-color': square[1]};"></div>
+    <div class="triangle triangle-right" ng-style="{'border-right-color': square[2]};"></div>
+    <div class="triangle triangle-bottom" ng-style="{'border-bottom-color': square[3]};"></div>
   </div>
 
 </div>
