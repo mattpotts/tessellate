@@ -13,23 +13,19 @@
 
 .triangle.triangle-bottom {
   border-top-width: 0;
-  border-bottom-color: #c85a80;
   top: 24px;
 }
 
 .triangle.triangle-top {
   border-bottom-width: 0;
-  border-top-color: #f3f3f3;
 }
 
 .triangle.triangle-left {
   border-right-width: 0;
-  border-left-color: #4d5e78;
 }
 
 .triangle.triangle-right {
   border-left-width: 0;
-  border-right-color: #7fb9df;
   right: 0;
 }
 
@@ -45,13 +41,17 @@
 /* Sequence */
 
 .sequence-of-squares {
+  /* Production settings / Debug settings */
   font-size: 0;
   line-height: 0;
+  /*font-size: 1em;*/
+  /*line-height: 1em;*/
 
   display: inline-block; /* Prevent border from being 100% wide */
   padding: 27px;
   border: 13px solid #333333;
   width: calc(7 * 48px); /* To exactly fit N squares */
+  height: calc(7 * 48px); /* To exactly fit N squares */
 
   position: absolute;
   left: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
