@@ -11,7 +11,7 @@
 
 <div class="sequence-of-squares" ng-controller="SquaresController as vm">
 
-  <div class="square-of-triangles" ng-repeat="square in vm.squares">
+  <div class="square-of-triangles" ng-repeat="square in vm.squares track by $index">
     <div class="triangle triangle-top" ng-style="{'border-top-color': square[0]};"></div>
     <div class="triangle triangle-left" ng-style="{'border-left-color': square[1]};"></div>
     <div class="triangle triangle-right" ng-style="{'border-right-color': square[2]};"></div>
