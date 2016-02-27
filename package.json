@@ -1,6 +1,6 @@
 {
   "name": "bonnie-craig",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Generate triangle art using CSS and HTML (à la Bonnie Craig)",
   "dependencies": {
     "normalize.css": "^3.0.3"
