@@ -7,29 +7,25 @@
 .t {
   width: 0;
   height: 0;
-  border: 0 solid transparent;
+  border: 90px solid transparent;
 }
 
 .t.t-bottom {
-  border-width: 50px;
   border-top-width: 0;
   border-bottom-color: #ff3399;
 }
 
 .t.t-top {
-  border-width: 20px;
   border-bottom-width: 0;
   border-top-color: #9933ff;
 }
 
 .t.t-left {
-  border-width: 60px;
   border-right-width: 0;
   border-left-color: #99ff33;
 }
 
 .t.t-right {
-  border-width: 10px;
   border-left-width: 0;
   border-right-color: #3399ff;
 }
