@@ -4,12 +4,8 @@
  * @constructor
  */
 function SquaresController() {
-  var vm = this;
-
   var squareCount = 49;
-
-  vm.squares = [];
-
+  var squares = [];
   var palettes = [
     [
       '#f3f3f3',
@@ -43,7 +39,7 @@ function SquaresController() {
    * @param palette
    * @returns {*[]}
    */
-  var getSquare = function (palette) {
+  var getRandomSquare = function (palette) {
     return [
       getRandomColor(palette),
       getRandomColor(palette),
@@ -57,11 +53,11 @@ function SquaresController() {
    *
    * @returns {Array}
    */
-  var getSquares = function () {
+  var getRandomSquares = function () {
     var palette = getRandomPalette();
     var squares = [];
     for (var i = 0; i < squareCount; i++) {
-      var square = getSquare(palette);
+      var square = getRandomSquare(palette);
       squares.push(square);
     }
     return squares;
@@ -89,13 +85,34 @@ function SquaresController() {
     return palettes[index];
   };
 
+  /**
+   * Update view-model with given array of squares.
+   */
+  var setSquares = function(squares) {
+    vm.squares = squares;
+  };
+
+  /**
+   * Update view-model with random squares.
+   */
+  var setRandomSquares = function() {
+    setSquares(getRandomSquares());
+  };
+
   /*
-   * Constructor
+   * Add objects to view-model.
+   */
+  var vm = this;
+  vm.squares = squares;
+  vm.setRandomSquares = setRandomSquares;
+
+  /*
+   * Constructor.
    */
   (function () {
-    vm.squares = getSquares();
+    setRandomSquares();
   })();
 }
 
-bonnieApp
+tessellateApp
     .controller('SquaresController', SquaresController);

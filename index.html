@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="bonnie">
+<html lang="en" ng-app="tessellateApp">
 <head>
   <meta charset="utf-8">
-  <title>Bonnie Craig</title>
+  <title>Tessellate</title>
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/triangles.css">
 </head>
@@ -11,7 +11,7 @@
 
 <div class="sequence-of-squares" ng-controller="SquaresController as vm">
 
-  <div class="square-of-triangles" ng-repeat="square in vm.squares track by $index">
+  <div class="square-of-triangles" ng-repeat="square in vm.squares track by $index" ng-click="vm.setRandomSquares()">
     <div class="triangle triangle-top" ng-style="{'border-top-color': square[0]};"></div>
     <div class="triangle triangle-left" ng-style="{'border-left-color': square[1]};"></div>
     <div class="triangle triangle-right" ng-style="{'border-right-color': square[2]};"></div>
@@ -21,7 +21,7 @@
 </div>
 
 <script src="bower_components/angular/angular.min.js"></script>
-<script src="scripts/bonnieApp.js"></script>
+<script src="scripts/tessellateApp.js"></script>
 <script src="scripts/SquaresController.js"></script>
 
 </body>
