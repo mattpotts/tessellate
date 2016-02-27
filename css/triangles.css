@@ -7,14 +7,14 @@
 .triangle {
   width: 0;
   height: 0;
-  border: 90px solid transparent;
+  border: 24px solid transparent;
   position: absolute;
 }
 
 .triangle.triangle-bottom {
   border-top-width: 0;
   border-bottom-color: #ff3399;
-  top: 90px;
+  top: 24px;
 }
 
 .triangle.triangle-top {
@@ -39,8 +39,8 @@
 .square-of-triangles {
   display: inline-block;
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 48px;
+  height: 48px;
 }
 
 
