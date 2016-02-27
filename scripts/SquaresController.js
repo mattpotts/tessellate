@@ -97,5 +97,5 @@ function SquaresController() {
   })();
 }
 
-bonnieApp
+tessellateApp
     .controller('SquaresController', SquaresController);
