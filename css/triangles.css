@@ -4,28 +4,39 @@
  * @see https://css-tricks.com/snippets/css/css-triangle/
  */
 
-.t {
+.triangle {
   width: 0;
   height: 0;
   border: 90px solid transparent;
+  position: absolute;
 }
 
-.t.t-bottom {
+.triangle.triangle-bottom {
   border-top-width: 0;
   border-bottom-color: #ff3399;
+  top: 90px;
 }
 
-.t.t-top {
+.triangle.triangle-top {
   border-bottom-width: 0;
   border-top-color: #9933ff;
 }
 
-.t.t-left {
+.triangle.triangle-left {
   border-right-width: 0;
   border-left-color: #99ff33;
 }
 
-.t.t-right {
+.triangle.triangle-right {
   border-left-width: 0;
   border-right-color: #3399ff;
+  right: 0;
+}
+
+
+/* Squares */
+
+.square {
+  position: relative;
+  width: 180px;
 }
