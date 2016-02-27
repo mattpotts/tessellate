@@ -4,36 +4,32 @@
  * @see https://css-tricks.com/snippets/css/css-triangle/
  */
 
-.triangle {
+.t {
   width: 0;
   height: 0;
   border: 0 solid transparent;
 }
 
-.arrow-up {
-  border-left-width: 50px;
-  border-right-width: 50px;
-
-  border-bottom: 50px solid #ff3399;
+.t.t-bottom {
+  border-width: 50px;
+  border-top-width: 0;
+  border-bottom-color: #ff3399;
 }
 
-.arrow-down {
-  border-left-width: 20px;
-  border-right-width: 20px;
-
-  border-top: 20px solid #9933ff;
+.t.t-top {
+  border-width: 20px;
+  border-bottom-width: 0;
+  border-top-color: #9933ff;
 }
 
-.arrow-right {
-  border-top-width: 60px;
-  border-bottom-width: 60px;
-
-  border-left: 60px solid #99ff33;
+.t.t-left {
+  border-width: 60px;
+  border-right-width: 0;
+  border-left-color: #99ff33;
 }
 
-.arrow-left {
-  border-top-width: 10px;
-  border-bottom-width: 10px;
-
-  border-right: 10px solid #3399ff;
+.t.t-right {
+  border-width: 10px;
+  border-left-width: 0;
+  border-right-color: #3399ff;
 }
