@@ -4,38 +4,49 @@
  * @see https://css-tricks.com/snippets/css/css-triangle/
  */
 
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-
-    border-bottom: 5px solid black;
+.triangle {
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  position: absolute;
 }
 
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-
-    border-top: 20px solid #f00;
+.triangle.triangle-bottom {
+  border-top-width: 0;
+  border-bottom-color: #ff3399;
+  top: 24px;
 }
 
-.arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-
-    border-left: 60px solid green;
+.triangle.triangle-top {
+  border-bottom-width: 0;
+  border-top-color: #9933ff;
 }
 
-.arrow-left {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+.triangle.triangle-left {
+  border-right-width: 0;
+  border-left-color: #99ff33;
+}
 
-    border-right:10px solid blue;
+.triangle.triangle-right {
+  border-left-width: 0;
+  border-right-color: #3399ff;
+  right: 0;
+}
+
+
+/* Squares */
+
+.square-of-triangles {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+
+/* Sequence */
+
+.sequence-of-squares {
+  font-size: 0;
+  line-height: 0;
 }
