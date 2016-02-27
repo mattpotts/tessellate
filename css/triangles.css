@@ -13,23 +13,23 @@
 
 .triangle.triangle-bottom {
   border-top-width: 0;
-  border-bottom-color: #ff3399;
+  border-bottom-color: #c85a80;
   top: 24px;
 }
 
 .triangle.triangle-top {
   border-bottom-width: 0;
-  border-top-color: #9933ff;
+  border-top-color: #dddee2;
 }
 
 .triangle.triangle-left {
   border-right-width: 0;
-  border-left-color: #99ff33;
+  border-left-color: #4d5e78;
 }
 
 .triangle.triangle-right {
   border-left-width: 0;
-  border-right-color: #3399ff;
+  border-right-color: #7fb9df;
   right: 0;
 }
 
