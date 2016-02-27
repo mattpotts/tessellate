@@ -7,9 +7,7 @@ function SquaresController() {
   var vm = this;
 
   var squareCount = 49;
-
-  vm.squares = [];
-
+  var squares = [];
   var palettes = [
     [
       '#f3f3f3',
@@ -89,11 +87,23 @@ function SquaresController() {
     return palettes[index];
   };
 
+  /**
+   * Update view-model with random squares.
+   */
+  var setSquares = function(squares) {
+    vm.squares = getSquares();
+  };
+
   /*
-   * Constructor
+   * Add objects to view-model.
+   */
+  vm.squares = squares;
+
+  /*
+   * Constructor.
    */
   (function () {
-    vm.squares = getSquares();
+    setSquares(getSquares());
   })();
 }
 
