@@ -8,7 +8,12 @@
     "type": "git",
     "url": "git@gitlab.tripodsoftware.co.uk:matt.potts/bonnie-craig.git"
   },
-  "keywords": ["triangles", "art", "generator", "bonnie craig"],
+  "keywords": [
+    "triangles",
+    "art",
+    "generator",
+    "bonnie craig"
+  ],
   "author": "Matt Potts",
   "license": "MIT"
 }
