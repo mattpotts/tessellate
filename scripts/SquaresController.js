@@ -4,8 +4,6 @@
  * @constructor
  */
 function SquaresController() {
-  var vm = this;
-
   var squareCount = 49;
   var squares = [];
   var palettes = [
@@ -41,7 +39,7 @@ function SquaresController() {
    * @param palette
    * @returns {*[]}
    */
-  var getSquare = function (palette) {
+  var getRandomSquare = function (palette) {
     return [
       getRandomColor(palette),
       getRandomColor(palette),
@@ -55,11 +53,11 @@ function SquaresController() {
    *
    * @returns {Array}
    */
-  var getSquares = function () {
+  var getRandomSquares = function () {
     var palette = getRandomPalette();
     var squares = [];
     for (var i = 0; i < squareCount; i++) {
-      var square = getSquare(palette);
+      var square = getRandomSquare(palette);
       squares.push(square);
     }
     return squares;
@@ -91,19 +89,20 @@ function SquaresController() {
    * Update view-model with random squares.
    */
   var setSquares = function(squares) {
-    vm.squares = getSquares();
+    vm.squares = squares;
   };
 
   /*
    * Add objects to view-model.
    */
+  var vm = this;
   vm.squares = squares;
 
   /*
    * Constructor.
    */
   (function () {
-    setSquares(getSquares());
+    setSquares(getRandomSquares());
   })();
 }
 
