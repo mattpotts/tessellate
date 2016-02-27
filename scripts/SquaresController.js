@@ -86,10 +86,17 @@ function SquaresController() {
   };
 
   /**
-   * Update view-model with random squares.
+   * Update view-model with given array of squares.
    */
   var setSquares = function(squares) {
     vm.squares = squares;
+  };
+
+  /**
+   * Update view-model with random squares.
+   */
+  var setRandomSquares = function() {
+    setSquares(getRandomSquares());
   };
 
   /*
@@ -102,7 +109,7 @@ function SquaresController() {
    * Constructor.
    */
   (function () {
-    setSquares(getRandomSquares());
+    setRandomSquares();
   })();
 }
 
