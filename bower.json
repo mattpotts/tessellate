@@ -1,0 +1,29 @@
+{
+  "name": "bonnie-craig",
+  "description": "Generate triangle art using CSS and HTML (à la Bonnie Craig)",
+  "main": "index.html",
+  "authors": [
+    "Matt Potts"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "triangles",
+    "art",
+    "generator",
+    "bonnie",
+    "craig"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#~1.5.0"
+  }
+}
