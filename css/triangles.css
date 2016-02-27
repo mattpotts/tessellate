@@ -1,0 +1,61 @@
+/**
+ * Triangles made of box borders
+ *
+ * @see https://css-tricks.com/snippets/css/css-triangle/
+ */
+
+.triangle {
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  position: absolute;
+}
+
+.triangle.triangle-bottom {
+  border-top-width: 0;
+  top: 24px;
+}
+
+.triangle.triangle-top {
+  border-bottom-width: 0;
+}
+
+.triangle.triangle-left {
+  border-right-width: 0;
+}
+
+.triangle.triangle-right {
+  border-left-width: 0;
+  right: 0;
+}
+
+/* Squares */
+
+.square-of-triangles {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+/* Sequence */
+
+.sequence-of-squares {
+  /* Production settings / Debug settings */
+  font-size: 0;
+  line-height: 0;
+  /*font-size: 1em;*/
+  /*line-height: 1em;*/
+
+  display: inline-block; /* Prevent border from being 100% wide */
+  padding: 27px;
+  border: 13px solid #333333;
+  width: calc(7 * 48px); /* To exactly fit N squares */
+  height: calc(7 * 48px); /* To exactly fit N squares */
+
+  position: absolute;
+  left: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
+  top: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
+
+  background-color: #f3f3f3;
+}
