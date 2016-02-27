@@ -45,8 +45,11 @@
 /* Sequence */
 
 .sequence-of-squares {
+  /* Production settings / Debug settings */
   font-size: 0;
   line-height: 0;
+  /*font-size: 1em;*/
+  /*line-height: 1em;*/
 
   display: inline-block; /* Prevent border from being 100% wide */
   padding: 27px;
