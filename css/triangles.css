@@ -36,7 +36,17 @@
 
 /* Squares */
 
-.square {
+.square-of-triangles {
+  display: inline-block;
   position: relative;
   width: 180px;
+  height: 180px;
+}
+
+
+/* Sequence */
+
+.sequence-of-squares {
+  font-size: 0;
+  line-height: 0;
 }
