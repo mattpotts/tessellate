@@ -1,6 +1,6 @@
 {
   "name": "bonnie-craig",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate tessellating triangle art using CSS and HTML (à la Bonnie Craig)",
   "dependencies": {
     "normalize.css": "^3.0.3"
