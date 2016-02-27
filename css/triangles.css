@@ -47,4 +47,13 @@
 .sequence-of-squares {
   font-size: 0;
   line-height: 0;
+
+  display: inline-block; /* Prevent border from being 100% wide */
+  padding: 27px;
+  border: 13px solid #333333;
+  width: calc(7 * 48px); /* To exactly fit N squares */
+
+  position: absolute;
+  left: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
+  top: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
 }
