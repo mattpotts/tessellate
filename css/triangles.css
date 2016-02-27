@@ -19,7 +19,7 @@
 
 .triangle.triangle-top {
   border-bottom-width: 0;
-  border-top-color: #dddee2;
+  border-top-color: #f3f3f3;
 }
 
 .triangle.triangle-left {
@@ -56,4 +56,6 @@
   position: absolute;
   left: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
   top: calc(50% - 13px - 27px - (7 / 2 * 48px)); /* Centered taking into account padding, border, and N squares */
+
+  background-color: #f3f3f3;
 }
