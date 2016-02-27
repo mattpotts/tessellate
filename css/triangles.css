@@ -4,38 +4,36 @@
  * @see https://css-tricks.com/snippets/css/css-triangle/
  */
 
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+.triangle {
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+}
 
-    border-bottom: 5px solid black;
+.arrow-up {
+  border-left-width: 50px;
+  border-right-width: 50px;
+
+  border-bottom: 50px solid #ff3399;
 }
 
 .arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+  border-left-width: 20px;
+  border-right-width: 20px;
 
-    border-top: 20px solid #f00;
+  border-top: 20px solid #9933ff;
 }
 
 .arrow-right {
-    width: 0;
-    height: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
 
-    border-left: 60px solid green;
+  border-left: 60px solid #99ff33;
 }
 
 .arrow-left {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
 
-    border-right:10px solid blue;
+  border-right: 10px solid #3399ff;
 }
