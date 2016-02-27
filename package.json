@@ -1,0 +1,21 @@
+{
+  "name": "bonnie-craig",
+  "version": "0.1.0",
+  "description": "Generate triangle art using CSS and HTML (à la Bonnie Craig)",
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.tripodsoftware.co.uk:matt.potts/bonnie-craig.git"
+  },
+  "keywords": [
+    "triangles",
+    "art",
+    "generator",
+    "bonnie craig"
+  ],
+  "author": "Matt Potts",
+  "license": "MIT"
+}
