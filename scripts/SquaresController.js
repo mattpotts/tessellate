@@ -31,12 +31,12 @@ function SquaresController() {
    * @param palette
    * @returns {*[]}
    */
-  var getSquare = function(palette) {
+  var getSquare = function (palette) {
     return [
-        getRandomColor(palette),
-        getRandomColor(palette),
-        getRandomColor(palette),
-        getRandomColor(palette)
+      getRandomColor(palette),
+      getRandomColor(palette),
+      getRandomColor(palette),
+      getRandomColor(palette)
     ];
   };
 
@@ -48,7 +48,7 @@ function SquaresController() {
   var getSquares = function () {
     var palette = getRandomPalette();
     var squares = [];
-    for(var i=0; i<squareCount; i++) {
+    for (var i = 0; i < squareCount; i++) {
       var square = getSquare(palette);
       squares.push(square);
     }
@@ -71,7 +71,7 @@ function SquaresController() {
    *
    * @returns {integer}
    */
-  var getRandomPalette = function() {
+  var getRandomPalette = function () {
     var max = palettes.length;
     var index = Math.floor(Math.random() * max);
     return palettes[index];
@@ -80,7 +80,7 @@ function SquaresController() {
   /*
    * Constructor
    */
-  (function() {
+  (function () {
     vm.squares = getSquares();
   })();
 }
