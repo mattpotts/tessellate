@@ -30,6 +30,12 @@ function SquaresController() {
       '#9dac4c',
       '#37485d',
       '#9b4667'
+    ],
+    [
+      '#ff9933',
+      '#99ff33',
+      '#33ff99',
+      '#9933ff'
     ]
   ];
 
